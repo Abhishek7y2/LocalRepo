@@ -1,3 +1,61 @@
-<p> This is new repo.</p>
-<p> This is a new feature (dropdown) </p>
-<p> This is a new feature (button) </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator UI</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="calc">
+        <div class="title">Calculator</div>
+
+        <div class="display">
+            <div class="displayText" id="display">0</div>
+        </div>
+
+        <div class="keys">
+            <!-- Row 1 -->
+            <button class="btn gray" data-action="percent">%</button>
+            <button class="btn gray" data-action="clearEntry">CE</button>
+            <button class="btn gray" data-action="clear">C</button>
+            <button class="btn gray" data-action="back">⌫</button>
+
+            <!-- Row 2 -->
+            <button class="btn gray" data-value="(">(</button>
+            <button class="btn gray" data-value=")">)</button>
+            <button class="btn gray" data-action="sqrt">√x</button>
+            <button class="btn orange" data-value="/">÷</button>
+
+            <!-- Row 3 -->
+            <button class="btn dark" data-value="7">7</button>
+            <button class="btn dark" data-value="8">8</button>
+            <button class="btn dark" data-value="9">9</button>
+            <button class="btn orange" data-value="*">×</button>
+
+            <!-- Row 4 -->
+            <button class="btn dark" data-value="4">4</button>
+            <button class="btn dark" data-value="5">5</button>
+            <button class="btn dark" data-value="6">6</button>
+            <button class="btn orange" data-value="-">−</button>
+
+            <!-- Row 5 -->
+            <button class="btn dark" data-value="1">1</button>
+            <button class="btn dark" data-value="2">2</button>
+            <button class="btn dark" data-value="3">3</button>
+            <button class="btn orange" data-value="+">+</button>
+
+            <!-- Row 6 -->
+            <button class="btn dark" data-value=".">.</button>
+            <button class="btn dark" data-value="0">0</button>
+            <button class="btn dark" data-action="sign">±</button>
+            <button class="btn orange eq" data-action="equals">=</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
